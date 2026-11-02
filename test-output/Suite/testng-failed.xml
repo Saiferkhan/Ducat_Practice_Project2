@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <classes>
+      <class name="testng.DataProviderRevision">
+        <methods>
+          <include name="enter_Credentials" invocation-numbers="0 1 2"/>
+          <include name="browserSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testng.DataProviderRevision -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <classes>
+      <class name="testng.DataProviderRevision">
+        <methods>
+          <include name="enter_Credentials" invocation-numbers="0 1 2"/>
+          <include name="browserSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testng.DataProviderRevision -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
