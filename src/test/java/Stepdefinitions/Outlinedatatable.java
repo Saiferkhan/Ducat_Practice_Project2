@@ -14,7 +14,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 
 public class Outlinedatatable {
-	
+	//--------------hooks--------------------------
 	WebDriver driver;
 	WebDriverWait wait;
 	@Before
@@ -31,7 +31,7 @@ public class Outlinedatatable {
             driver.quit();
         }
     }
-	 
+//--------------------------------------------------------	 
     @Given("user go to the login page")
     public void user_go_to_the_login_page() {
     	
